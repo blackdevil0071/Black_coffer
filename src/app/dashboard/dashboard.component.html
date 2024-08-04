@@ -1,0 +1,45 @@
+<div class="charts">
+  <div class="filters">
+    <mat-form-field>
+      <mat-select placeholder="Select Year" [(value)]="selectedYear" (selectionChange)="onPieChartFilterChange()">
+        <mat-option *ngFor="let year of years" [value]="year">{{ year }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <svg id="pieChart" width="600" height="500"></svg>
+    <mat-form-field>
+      <mat-select placeholder="Select Sector" [(value)]="selectedSector" (selectionChange)="onLineChartFilterChange()">
+        <mat-option *ngFor="let sector of sectors" [value]="sector">{{ sector }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <svg id="lineChart" width="600" height="500"></svg>
+
+
+    <mat-form-field>
+      <mat-select placeholder="Select Country" [(value)]="selectedCountry" (selectionChange)="onScatterPlotFilterChange()">
+        <mat-option *ngFor="let country of countries" [value]="country">{{ country }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <svg id="scatterPlot" width="600" height="500"></svg>
+
+    <mat-form-field>
+      <mat-select placeholder="Select Sector" [(value)]="selectedSector" (selectionChange)="onBubbleChartFilterChange()">
+        <mat-option *ngFor="let sector of sectors" [value]="sector">{{ sector }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <svg id="bubbleChart" width="600" height="500"></svg>
+    <mat-form-field>
+      <mat-select placeholder="Select Region" [(value)]="selectedRegion" (selectionChange)="onHeatmapFilterChange()">
+        <mat-option *ngFor="let region of regions" [value]="region">{{ region }}</mat-option>
+      </mat-select>
+    </mat-form-field>    <svg id="heatmap" width="600" height="500"></svg>
+  </div>
+
+  <div class="charts-container">
+
+
+
+
+
+  </div>
+</div>

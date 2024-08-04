@@ -1,0 +1,50 @@
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.filters mat-form-field {
+  margin-bottom: 20px;
+}
+
+.charts svg {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.pie-chart-section, .line-chart-section, .scatter-plot-section, .bubble-chart-section, .heatmap-section {
+  flex: 1;
+  min-width: 600px;
+}
+
+.pie-chart-section, .line-chart-section {
+  margin-bottom: 20px;
+}
+
+.scatter-plot-section, .bubble-chart-section, .heatmap-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mat-form-field {
+  width: 40%;
+}
+
+.mat-select {
+  width: 40%;
+}
+
+.mat-option {
+  padding: 8px 16px;
+}
